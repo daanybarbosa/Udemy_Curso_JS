@@ -1,0 +1,25 @@
+//instalar o nodemon - na area de desenvolvimento
+$ npm install nodemon --save-dev
+
+//executar o nodemon
+$ npx nodemon server.js
+
+//mudar o package.json
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  }
+
+//iniciar o nodemon
+$ npm start
+
+* pasta src = source e é o código bruto antes da minificação ou concatenação ou alguma outra compilação 
+  - usada para ler / editar o código.
+
+* pasta dist = distribuição e é a versão reduzida/concatenada 
+  - realmente usada em sites de produção
+
+* pasta public = conteudo estatico 
+  - em seu conteudo tera o assets, css, imagens e js 
+
+

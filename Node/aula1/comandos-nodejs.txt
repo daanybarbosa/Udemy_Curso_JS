@@ -1,0 +1,5 @@
+// iniciar o npm 
+npm init -y 
+
+//instalar o axios
+npm i axios

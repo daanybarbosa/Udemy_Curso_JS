@@ -1,0 +1,54 @@
+//instalar o nodemon - na area de desenvolvimento
+$ npm install nodemon --save-dev
+
+//executar o nodemon
+$ npm nodemon server.js
+
+//mudar o package.json
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  }
+
+//iniciar o nodemon
+$ npm start
+
+
+//iniciar o webpack
+$ npm run dev
+
+* pasta src (ou backend) = source e é o código bruto antes da minificação ou concatenação ou alguma outra compilação 
+  - usada para ler / editar o código.
+
+* pasta dist = distribuição e é a versão reduzida/concatenada 
+  - realmente usada em sites de produção
+
+* pasta public = conteudo estatico 
+  - em seu conteudo tera o assets, css, imagens e js 
+
+* pasta frontend = conteudo frontend
+
+* pasta models = conteudo da base de dados
+  - responsavel por criar, procurar e excluir qlq informacao do banco de dados 
+
+MVC = model/views/controllers
+
+* sessões ira salvar qlq informacao que o usuario inserir no browser (por eemplo)
+  - é o modo de identificar que aquele navegador do cliente é o mesmo navegador q ele usou na ultima sessão
+
+// instalar o express-session 
+$ npm i express-session connect-mongo connect-flash
+
+Comentarios no EJS = <%# 
+
+** HELMET - Melhor pratica de segurança para o express
+
+** CSRF - cross site request forgery 
+  - evita que algo malicioso tenha controle sobre o site (virus)
+  - a cada formulario que fomos enviar no site ira gerar um token (senha) para que o CSRF cheque que veio realmente do nosso site 
+
+//instalar o helmet 
+$ npm i helmet
+
+//instalar o CSRF
+$ npm i csurf

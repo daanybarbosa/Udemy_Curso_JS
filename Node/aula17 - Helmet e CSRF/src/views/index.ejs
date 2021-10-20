@@ -1,0 +1,23 @@
+<%- include('includes/head'); %>
+<body>
+    <section class="container">
+        <h1> <!-- Site -->
+            <!-- < %= umaVariavelLocal %> -->
+            
+            <!-- ira exibir um novo token a cada nova requisição -->
+            <%= csrfToken %>
+            
+        </h1>
+        <!-- Em todos os formularios que forem usar o helmet e csrf precisa ser feito essa configuraçao -->
+        <form action="/" method="POST">
+
+            <!-- inclusao do csrfToken -->
+            <input type="hidden" name= "_csrf" value="<%= csrfToken %>">
+            
+            <label>Cliente</label>
+            <input type="text" name="cliente">
+            <button>Submit</button>
+        </form>
+    </section>
+
+<%- include('includes/footer'); %>

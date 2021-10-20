@@ -1,0 +1,49 @@
+// iniciar o npm - ira incluir o package.json
+$ npm init -y 
+
+// instalar express - na ultima versao
+$ npm i express 
+$ npm install express 
+$ npm install express -E //nao ira atualizar as versoes
+
+//atualizar as versoes das dependencias dentro do npm
+$ npm update
+
+//mover o express para a area de desenvolvimento
+$ npm install express --save-dev 
+
+//voltar o express para dependencies 
+$ npm install express --save-prod 
+
+//instalar uma versao especifica do express 
+$ npm install express@2.1.0
+
+2.      1.          0
+major   minor     patch
+
+2.1.1 //atualizaçao de bugs 
+2.2.0 //adicionar recursos novos
+3.0.0 //ira quebrar a compartibilidade das versoes anteriores
+
+^ //ira atualizar o minor e patch
+~ //ira atualizar apenas o pacth
+
+$ npm install express@4.x //ira instalar a versao 4 na ultima versao
+$ npm install express@4
+
+//desinstalar o express
+$ npm uninstall express 
+
+//instalar o webpack 
+$ npm i webpack --save-dev 
+
+//listar tudo que esta dentro do npm (dependencias e programas)
+$ npm ls 
+$ npm ls --depth=0 //ira ver apenas o que foi selecionar na instalacao
+$ npm ls --depth=1 //aumentar os detalhes da lista
+
+//visualizar os pacotes desatualizados
+$ npm outdated
+
+//desinstalar dois programas
+$ npm uninstall webpack express 

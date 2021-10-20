@@ -1,0 +1,4 @@
+// 
+npx create-react-app <nome_do_projeto> 
+npx create-react-app . 
+

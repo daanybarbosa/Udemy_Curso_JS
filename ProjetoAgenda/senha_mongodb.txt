@@ -1,0 +1,4 @@
+user: daanybarbosa
+password: Dani123
+
+mongodb+srv://daanybarbosa:<Dani123>@cursojs01.b2g4u.mongodb.net/meuBancoDeDados?retryWrites=true&w=majority

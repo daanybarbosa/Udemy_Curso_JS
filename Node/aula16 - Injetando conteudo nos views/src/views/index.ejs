@@ -1,0 +1,45 @@
+<%- include('includes/head'); %>
+<body>
+    <section class="container">
+        <h1> <!-- Site -->
+            <!-- Comentarios no EJS <%# 
+            EJS ativa o JavaScript dentro das tags -->
+
+            <!-- Express - injetando o conteudo do homeController via middleware  -->
+            <!-- < %= titulo %> </br> <!-- o sinal de =, escapa os caracteres, + seguro para nao quebrar o template -->
+            <!-- < %- titulo %> <!-- o sinal de -, executa o codigo em html, menos seguro, é utilizado quando se precisa executar um codigo em html -->
+
+            <!-- controle de fluxo 
+            < % if(typeof titulo !== 'undefined' ) { %>
+                < %= titulo %>
+            < % } else { %>
+                O titulo não foi enviado.
+            < % } %>
+            -->
+
+            <!-- FOR 
+            < % numeros.forEach(num => { %>
+                < %= num %> </br>
+            < % }); %>
+            -->
+
+            <!-- Outro FOR (não funciona com const )
+            < % for(let i = 0; i < numeros.length; i++){ %>
+                < %=  numeros[i] %>
+            < % }; %>
+            -->
+
+            <!-- Usando Middleware - nesse caso estará disponivel em todas as paginas 
+                - Pq o middleware está sem rota (global)
+                -->
+            <%= umaVariavelLocal %> 
+            
+        </h1>
+        <form action="/" method="POST">
+            <label>Cliente</label>
+            <input type="text" name="cliente">
+            <button>Submit</button>
+        </form>
+    </section>
+
+<%- include('includes/footer'); %>

@@ -1,0 +1,14 @@
+//instalar o nodemon - na area de desenvolvimento
+$ npm install nodemon --save-dev
+
+//executar o nodemon
+$ npx nodemon server.js
+
+//mudar o package.json
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  }
+
+//iniciar o nodemon
+$ npm start
