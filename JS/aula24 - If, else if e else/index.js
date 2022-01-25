@@ -1,0 +1,42 @@
+/**
+ * Entre 0 - 11 -> Bom dia
+ * Entre 12 - 17 -> Boa tarde
+ * Entre 18 - 23 -> Boa noite
+ * 
+ * - If pode ser usado sozinho
+ * - Sempre que utilizo o else, preciso de um If antes
+ * - Pode ter varios else, ifs na checagem
+ * - Só pode ter um else na checagem
+ * - Podemos usar condições sem else if, utilizando apenas if e else
+ */
+
+// ----------------------------------------------------------------------
+// Exemplo 1
+// ----------------------------------------------------------------------
+/*
+const hora = 50;
+
+if ( hora >= 0 && hora <= 11 ) {
+    console.log('Bom dia');
+} else if (hora >= 12 && hora <= 17 ){
+    console.log('Boa tarde');
+} else if (hora >= 18 && hora <= 23){
+    console.log('Boa noite');
+} else {
+    console.log('Olá');
+}
+*/
+
+// ----------------------------------------------------------------------
+// Exemplo 2
+// ----------------------------------------------------------------------
+/*
+//const tenhoGrana = true;
+const tenhoGrana = NaN;
+
+if (tenhoGrana){
+    console.log('Vou sair de casa');
+} else {
+    console.log('Não vou sair de casa');
+}
+*/
